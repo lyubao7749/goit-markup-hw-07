@@ -750,6 +750,7 @@ img {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: var(--primary-bgr);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -781,10 +782,6 @@ img {
 
 .modal-close:hover svg {
   fill: var(--accent-color);
-}
-
-.modal-body {
-  padding: 40px;
 }
 
 .modal-title {
@@ -854,9 +851,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
 }
-/* checkbox modal */
 
-/* скрыли чекбокс */
 .form-policy {
   position: relative;
   display: flex;
@@ -874,12 +869,6 @@ img {
   padding: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.policy-checkbox:focus {
-  outline-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  border-radius: 2px;
 }
 
 .policy-checkbox:checked + .policy-icon {
@@ -906,7 +895,7 @@ img {
   text-align: center;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--main-color-text);
   border-radius: 2px;
   margin-right: 7px;
 }
@@ -923,8 +912,6 @@ img {
   border: 2px solid var(--accent-color);
   border-radius: 2px;
 }
-
-/* button submit form */
 
 .form-submit-btn {
   background-color: var(--accent-color);
