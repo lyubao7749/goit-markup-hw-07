@@ -807,6 +807,10 @@ img {
   position: relative;
 }
 
+.modal-form .form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .form-label {
   margin-bottom: 4px;
   color: var(--second-color-text);
@@ -850,14 +854,15 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
 }
+/* checkbox modal */
 
-.policy-box {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
+/* скрыли чекбокс */
+.form-policy {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 20px 0 30px 0;
 }
 
 .policy-checkbox {
@@ -871,29 +876,55 @@ img {
   overflow: hidden;
 }
 
-.policy-checkbox:checked + .policy-box::before {
-  background-image: url(../images/icons/full-check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.policy-checkbox:focus {
+  outline-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
 }
 
-.policy-box::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/icons/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-right: 10px;
+.policy-checkbox:checked + .policy-icon {
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+  background-origin: border-box;
 }
 
-.policy-box a {
+.policy-label {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+}
+
+.policy-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
+
+.policy-label::before {
+  content: '';
+  display: inline-flex;
+  text-align: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.policy-icon {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  opacity: 0;
+  pointer-events: none;
+
+  background-color: var(--accent-color);
+  fill: var(--primary-bgr);
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+}
+
+/* button submit form */
 
 .form-submit-btn {
   background-color: var(--accent-color);

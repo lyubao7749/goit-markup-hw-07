@@ -478,13 +478,26 @@
                 class="form-input form-message"
               ></textarea>
             </div>
-            <!--div class="form-field"-->
-            <input type="checkbox" class="policy-checkbox" id="policy-check" />
-            <label class="policy-box" for="policy-check">
-              Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
-            </label>
-            <!--/div-->
+          </div>
+          <div class="modal-footer">
+            <div class="form-policy">
+              <input
+                type="checkbox"
+                name="policy-checkbox"
+                class="policy-checkbox"
+                id="policy-checkbox"
+              />
+              <svg class="policy-icon" width="16" height="15">
+                <use href="./images/icons.svg#full-check-ico"></use>
+              </svg>
+
+              <label class="policy-label" for="policy-checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="policy-link">Условия договора</a></label
+              >
+            </div>
             <button type="submit" class="btn form-submit-btn">Отправить</button>
+          </div>
           </form>
         </div>
       </div>
