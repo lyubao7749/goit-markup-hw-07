@@ -443,62 +443,52 @@
         <a href="#" class="modal-close" data-modal-close>
           <svg width="18" height="18"><use href="./images/icons.svg#modal-close"></use></svg>
         </a>
-
-        <div class="modal-body">
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="modal-form">
-            <div class="form-field">
-              <label for="user-name" class="form-label">Имя</label>
-              <input type="text" name="user-name" id="user-name" class="form-input" required />
-              <svg width="18" height="18" class="form-input-icon">
-                <use href="./images/icons.svg#person-ico"></use>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="modal-form" autocomplete="off">
+          <label class="form-field">
+            Имя
+            <input type="text" name="user-name" class="form-input" required />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#person-ico"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            Телефон
+            <input type="tel" name="user-phone" class="form-input" required />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#phone-ico"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            Почта
+            <input type="email" name="user-mail" class="form-input" required />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/icons.svg#email-ico"></use>
+            </svg>
+          </label>
+          <label class="form-field-comment">
+            Комментарий
+            <textarea
+              name="user-msg"
+              class="form-input form-textarea"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form-policy">
+            <input type="checkbox" class="form-checkbox" />
+            <span class="policy-boxcheck">
+              <svg class="policy-icon" width="16" height="15">
+                <use href="./images/icons.svg#check-ico"></use>
               </svg>
-            </div>
-            <div class="form-field">
-              <label for="user-phone" class="form-label">Телефон</label>
-              <input type="tel" name="user-phone" id="user-phone" class="form-input" required />
-              <svg width="18" height="18" class="form-input-icon">
-                <use href="./images/icons.svg#phone-ico"></use>
-              </svg>
-            </div>
-            <div class="form-field">
-              <label for="user-mail" class="form-label">Почта</label>
-              <input type="email" name="user-mail" id="user-mail" class="form-input" required />
-              <svg width="18" height="18" class="form-input-icon">
-                <use href="./images/icons.svg#email-ico"></use>
-              </svg>
-            </div>
-            <div class="form-field">
-              <label for="comment" class="form-label">Комментарий</label>
-              <textarea
-                name="comment"
-                id="comment"
-                rows="8"
-                placeholder="Введите текст"
-                class="form-input form-message"
-              ></textarea>
-            </div>
-            <div class="modal-footer">
-              <div class="form-policy">
-                <input
-                  type="checkbox"
-                  name="policy-checkbox"
-                  class="policy-checkbox"
-                  id="policy-checkbox"
-                />
-                <svg class="policy-icon" width="16" height="15">
-                  <use href="./images/icons.svg#full-check-ico"></use>
-                </svg>
-
-                <label class="policy-label" for="policy-checkbox"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="policy-link">Условия договора</a></label
-                >
-              </div>
-              <button type="submit" class="btn form-submit-btn">Отправить</button>
-            </div>
-          </form>
-        </div>
+            </span>
+            <span class="policy-meta"
+              >Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="policy-link"
+                >Условия договора</a
+              ></span
+            >
+          </label>
+          <button type="submit" class="btn form-submit-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
