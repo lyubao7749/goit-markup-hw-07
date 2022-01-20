@@ -133,6 +133,40 @@ body {
           align-items: center;
 }
 
+.icon {
+  fill: currentColor;
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+  cursor: pointer;
+}
+
+.section {
+  padding: 94px 0 94px 0;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -255,14 +289,64 @@ body {
   fill: var(--accent-color);
 }
 
-.icon {
-  fill: currentColor;
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
-}
-
 .contacts__icon {
   margin-right: 10px;
   fill: var(----second-color-text);
+}
+
+.hero {
+  min-height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__title {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sec-text-color);
+}
+
+.hero__btn {
+  padding: 10px 32px;
+  color: var(--sec-text-color);
+  background-color: var(--accent-color);
+}
+
+.hero__btn:hover, .hero__btn:focus {
+  background-color: var(--accent-second-color);
+}
+
+.feature-section {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 0px;
+  color: var(--main-color-text);
+}
+
+.feature-section--invisible {
+  visibility: hidden;
+  height: 0;
+}
+
+.features__title {
+  color: var(--main-color-text);
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
