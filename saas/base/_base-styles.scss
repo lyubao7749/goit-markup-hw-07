@@ -1,0 +1,19 @@
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  background: var(--primary-bgr);
+  color: var(--main-color-text);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
