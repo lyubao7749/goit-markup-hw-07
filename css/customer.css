@@ -24,17 +24,13 @@
   -webkit-transition: border-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function);
 }
-
 .customer__link:hover {
   border: 1px solid var(--accent-color);
 }
-
-.customer__link:hover .customer__icon,
-.customer__link:focus .customer__icon {
+.customer__link:hover .customer__icon, .customer__link:focus .customer__icon {
   fill: var(--accent-color);
 }
 
 .customer__icon {
   fill: #afb1b8;
-}
-/*# sourceMappingURL=customer.css.map */
+}/*# sourceMappingURL=customer.css.map */

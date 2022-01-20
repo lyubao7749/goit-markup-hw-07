@@ -1,6 +1,6 @@
 :root {
-  --main-font: 'Roboto';
-  --second-font: 'Raleway';
+  --main-font: "Roboto";
+  --second-font: "Raleway";
   --main-color-text: #212121;
   --second-color-text: #757575;
   --accent-color: #2196f3;
@@ -34,7 +34,6 @@ time, mark, audio, video {
 a {
   text-decoration: none;
 }
-
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -170,7 +169,6 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +190,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
 .logo--accent {
   color: #000000;
 }
@@ -217,13 +214,11 @@ body {
   padding-bottom: 32px;
   color: var(--main-color-text);
 }
-
 .site-nav__link:hover {
   color: var(--accent-color);
 }
-
 .site-nav__link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -240,7 +235,6 @@ body {
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
-
 .site-nav__link--active::after, .site-nav__link:hover::after {
   opacity: 1;
   -webkit-transform: scaleX(1);
@@ -280,11 +274,9 @@ body {
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
-
 .contacts__link:hover {
   color: var(--accent-color);
 }
-
 .contacts__link:hover .contacts__icon {
   fill: var(--accent-color);
 }
@@ -328,7 +320,6 @@ body {
   color: var(--sec-text-color);
   background-color: var(--accent-color);
 }
-
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-second-color);
 }
@@ -344,7 +335,6 @@ body {
   color: var(--main-color-text);
   margin-bottom: 10px;
 }
-
 .features__title--invisible {
   visibility: hidden;
   height: 0;
@@ -434,13 +424,10 @@ body {
   -webkit-transition: background-color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
 }
-
 .team__social-link:hover, .team__social-link:focus {
   background-color: var(--accent-color);
 }
-
-.team__social-link:hover .team__social-icon,
-.team__social-link:focus .team__social-icon {
+.team__social-link:hover .team__social-icon, .team__social-link:focus .team__social-icon {
   fill: #ffffff;
 }
 
@@ -474,13 +461,10 @@ body {
   -webkit-transition: border-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function);
 }
-
 .customer__link:hover {
   border: 1px solid var(--accent-color);
 }
-
-.customer__link:hover .customer__icon,
-.customer__link:focus .customer__icon {
+.customer__link:hover .customer__icon, .customer__link:focus .customer__icon {
   fill: var(--accent-color);
 }
 
@@ -506,7 +490,6 @@ body {
   margin-right: 0;
   padding: 0;
 }
-
 .footer__logo--accent {
   color: #ffffff;
 }
@@ -522,7 +505,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-bgr);
 }
-
 .contact-info__link:hover, .contact-info__link:focus {
   color: var(--accent-color);
 }
@@ -664,5 +646,4 @@ body {
 .footer-submit-btn:hover,
 .footer-submit-btn:focus {
   background-color: var(--accent-second-color);
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
