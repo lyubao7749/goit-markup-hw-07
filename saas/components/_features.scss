@@ -3,13 +3,13 @@
   margin-bottom: 50px;
   padding-bottom: 0px;
   color: var(--main-color-text);
-  &--invisible {
-    visibility: hidden;
-    height: 0;
-  }
 }
 
 .features__title {
   color: var(--main-color-text);
   margin-bottom: 10px;
+  &--invisible {
+    visibility: hidden;
+    height: 0;
+  }
 }
